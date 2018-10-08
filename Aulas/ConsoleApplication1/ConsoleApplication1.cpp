@@ -6,13 +6,27 @@ comentario longo
 
 */
 
-#include "stdafx.h"                                                 // incluso de biblioteca
-                                                                   //C ansi
-#include <stdio.h>                                                // padrao de entrada e saida
-#include <stdlib.h>                                              //biblioteca padrao onde tem comandos
+#include "stdafx.h"     // incluso de biblioteca
+                       //C ansi
+#include <stdio.h>    // padrao de entrada e saida
+#include <stdlib.h>  //biblioteca padrao onde tem comandos
 
-int main()                                                     // ponto de inicio
+//variaveis
+int a; //inteiro
+float b; //real(ponto flutuante)
+double c; //real(maior precisao)
+bool d; //booleano (verdadeiro/falso) (true/false)
+
+
+
+
+int main() // ponto de inicio
 {
-    return 0;
+     //variavel local	
+	//()visivel somente nesta funcao,a partir dessa linha)
+
+	int e;
+
+	return 0;
 }
 
