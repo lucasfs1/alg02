@@ -5,7 +5,9 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ConsoleApplication1", "ConsoleApplication1\ConsoleApplication1.vcxproj", "{3FEB462A-15C2-4862-81C4-A02EE8737E56}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "aula 10-10", "aula 10-10\aula 10-10.vcxproj", "{BFDC397A-D3E4-4F59-8D4E-A1B60CC99E3E}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "aula 10-10=funcoes", "aula 10-10\aula 10-10.vcxproj", "{BFDC397A-D3E4-4F59-8D4E-A1B60CC99E3E}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Aula1010_CalculadoraSimples", "Aula1010_CalculadoraSimples\Aula1010_CalculadoraSimples.vcxproj", "{3B8F591E-B6F0-4FEF-A664-B7D914590A29}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,6 +33,14 @@ Global
 		{BFDC397A-D3E4-4F59-8D4E-A1B60CC99E3E}.Release|x64.Build.0 = Release|x64
 		{BFDC397A-D3E4-4F59-8D4E-A1B60CC99E3E}.Release|x86.ActiveCfg = Release|Win32
 		{BFDC397A-D3E4-4F59-8D4E-A1B60CC99E3E}.Release|x86.Build.0 = Release|Win32
+		{3B8F591E-B6F0-4FEF-A664-B7D914590A29}.Debug|x64.ActiveCfg = Debug|x64
+		{3B8F591E-B6F0-4FEF-A664-B7D914590A29}.Debug|x64.Build.0 = Debug|x64
+		{3B8F591E-B6F0-4FEF-A664-B7D914590A29}.Debug|x86.ActiveCfg = Debug|Win32
+		{3B8F591E-B6F0-4FEF-A664-B7D914590A29}.Debug|x86.Build.0 = Debug|Win32
+		{3B8F591E-B6F0-4FEF-A664-B7D914590A29}.Release|x64.ActiveCfg = Release|x64
+		{3B8F591E-B6F0-4FEF-A664-B7D914590A29}.Release|x64.Build.0 = Release|x64
+		{3B8F591E-B6F0-4FEF-A664-B7D914590A29}.Release|x86.ActiveCfg = Release|Win32
+		{3B8F591E-B6F0-4FEF-A664-B7D914590A29}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

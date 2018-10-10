@@ -8,21 +8,23 @@ void HelloWorld()
 	printf("Hello Word!\n");
 } 
 
-int Soma2Valores(int a, int b)
+int LerValorInteiro()
 {
-
-	int c;
-	c = a + b;
-	return c;
+	int variavel;
+	printf("\nFavor digitar um numero:");
+	scanf_s("%i", &variavel);
+	return variavel
 }
 
 int main()
 {
 	HelloWorld();
-	int d = Soma2Valores(99, 1);
-	printf("\tResultado: %i\n", d);
+	int primeirovalor = LerValorInteiro()
+		segundovalor = LerValorInteiro()
 
 
+		int resultado = Soma2valores(primeirovalor, segundovalor)
+		printf("Resultado:%i",resultado)
 
 
 
