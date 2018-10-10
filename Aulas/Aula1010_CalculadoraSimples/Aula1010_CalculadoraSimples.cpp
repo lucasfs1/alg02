@@ -2,10 +2,58 @@
 //
 
 #include "stdafx.h"
+#include<stdlib.h>
 
+
+int  mais (int a, int b)
+{
+	int c;
+	c = a + b;
+	return c;
+}
+int  menos (int a, int b)
+{
+	int c;
+	c = a - b;
+	return c;
+}
+int  vezes(int a, int b)
+{
+	int c;
+	c = a * b;
+	return c;
+}
+int  dividir(int a, int b)
+{
+	int c;
+	c = a / b;
+	return c;
+}
+int LerValorInteiro()
+{
+	int variavel;
+	printf("\nFavor digitar um numero:");
+	scanf_s("%i", &variavel);
+	return variavel;
+}
 
 int main()
 {
-	printf("resultado da soma:")
-    return 0;
+	int primeirovalor = LerValorInteiro();
+	int segundovalor = LerValorInteiro();
+
+	int resultado = mais(primeirovalor, segundovalor);
+	printf("Resultado:%i", resultado);
+
+	 resultado = menos(primeirovalor, segundovalor);
+	printf("Resultado:%i", resultado);
+
+ resultado = vezes(primeirovalor, segundovalor);
+	printf("Resultado:%i", resultado);
+
+ resultado = dividir(primeirovalor, segundovalor);
+	printf("Resultado:%i", resultado);
+	system("pause");
+
+	return 0;
 }
