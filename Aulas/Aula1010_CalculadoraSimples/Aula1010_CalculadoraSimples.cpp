@@ -5,54 +5,54 @@
 #include<stdlib.h>
 
 
-int  mais (int a, int b)
+int   mais (int    a, int     b)
 {
-	int c;
+	int    c;
 	c = a + b;
 	return c;
 }
-int  menos (int a, int b)
+int     menos (int    a, int    b)
 {
-	int c;
+	int  c;
 	c = a - b;
 	return c;
 }
-int  vezes(int a, int b)
+int     vezes(int    a, int    b)
 {
-	int c;
+	int    c;
 	c = a * b;
 	return c;
 }
-int  dividir(int a, int b)
+int   dividir(int    a, int    b)
 {
-	int c;
+	int    c;
 	c = a / b;
 	return c;
 }
-int LerValorInteiro()
+int   LerValorInteiro()
 {
-	int variavel;
+	int  variavel;
 	printf("\nFavor digitar um numero:");
 	scanf_s("%i", &variavel);
 	return variavel;
 }
 
-int main()
+int  main()
 {
-	int primeirovalor = LerValorInteiro();
-	int segundovalor = LerValorInteiro();
+	int  primeirovalor = LerValorInteiro();
+	int  segundovalor = LerValorInteiro();
 
-	int resultado = mais(primeirovalor, segundovalor);
-	printf("Resultado:%i", resultado);
+	int  resultado = mais(primeirovalor, segundovalor);
+	printf("\nResultado:%i", resultado);
 
 	 resultado = menos(primeirovalor, segundovalor);
-	printf("Resultado:%i", resultado);
+	printf("\nResultado:%i", resultado);
 
  resultado = vezes(primeirovalor, segundovalor);
-	printf("Resultado:%i", resultado);
+	printf("\nResultado:%i", resultado);
 
  resultado = dividir(primeirovalor, segundovalor);
-	printf("Resultado:%i", resultado);
+	printf("\nResultado:%i\n", resultado);
 	system("pause");
 
 	return 0;
