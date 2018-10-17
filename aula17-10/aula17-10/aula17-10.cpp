@@ -43,7 +43,11 @@ int main()
 
 
 	}
-
+	// if pode exisitir  sem o else
+	//else nao pode existir sem o if
+	//HackerRank
+	//freeCodeCamp
+	//hora do codico
 
 
     return 0;
