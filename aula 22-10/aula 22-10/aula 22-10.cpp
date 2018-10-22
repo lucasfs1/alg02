@@ -73,8 +73,45 @@ void ImprimiValores(float a, float b, float c, float d)
     /////////////////
 
 }
+void ParOuImpar(int a)
+{
+	if ((a % 2 == 0)) //a%2 resto da divisao por 2 
+	{
+		printf("Par\n");
+	}
+	else
+	{
+		printf("Impar\n");
+	}
+}
 
+void ExemploSwitch()
+{
+	printf("Escolha uma opcao:\n");
+    printf("1 - a\n2 -b\n3 - c\n4 -4");
+	int op = 0;
+	scanf_s("%i", &op);
 
+		switch (op)
+		{
+		case 1:
+			printf("Voce escolheu a \n");
+			break;
+		case 2:
+			printf("Voce escolheu b \n");
+			break;
+		case 3:
+			printf("Voce escolheu c \n");
+			break;
+		case 4:
+			printf("Voce escolheu d \n");
+			break;
+		default:
+			printf("Opçao invalida\n");
+			break;
+		}
+
+}
 int main()
 
 {
@@ -84,14 +121,21 @@ int main()
 	int variavelquatro = ValoresInteiros();
 	int m = MaiorValor(variavelum, variaveldois, variaveltres, variavelquatro);
 
-	printf("\nO maior valor encontrado foi: \t\n%i\n", m);
+	printf("\nO maior valor encontrado foi: \t%i\n", m);
 
-	float variavelumReal = LerValor();
+	/*float variavelumReal = LerValor();
 	float variaveldoisReal = LerValor();
 	float variaveltresReal = LerValor();
 	float variavelquatroReal = LerValor();
 
-	ImprimiValores(variavelumReal, variaveldoisReal, variaveltresReal, variavelquatroReal);
+	ImprimiValores(variavelumReal, variaveldoisReal, variaveltresReal, variavelquatroReal);*/
+	/*ParOuImpar(2);
+	ParOuImpar(4);
+	ParOuImpar(5);
+	ParOuImpar(7);*/
+	printf("\n\n");
+	ExemploSwitch();
+
 	printf("\n\n");
 
 
