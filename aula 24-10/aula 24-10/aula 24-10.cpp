@@ -114,11 +114,11 @@ int main()
 {
 	 int variavelum = numeroInteiro();
 	 int variaveldois = numeroInteiro();
-
-	 while (variavelum)
+	 do
 	 {
-
-	 }
+		 variavelum++;
+		 printf("numero%i\n", variavelum);
+	 } while (variavelum <= variaveldois );
 
 	system("pause");
 	return 0;
