@@ -117,8 +117,8 @@ int main()
 	 do
 	 {
 		 variavelum++;
-		 printf("numero%i\n", variavelum);
-	 } while (variavelum <= variaveldois );
+		 printf("numero:%i\n", variavelum);
+	 } while (variavelum < variaveldois );
 
 	system("pause");
 	return 0;
