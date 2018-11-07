@@ -160,3 +160,29 @@ int main()
 	return 0;
 }
 */
+
+int main()
+
+{
+	int c, x, y;
+
+	printf_s("\nDigite um valor entre 2 e 20: ");
+	scanf_s("%d", &x);
+
+	for (c = 1; c <= x; c++) {
+		for (y = 1; y <= c; y++)
+			printf_s("%d", y);
+		printf_s("\n");
+	}
+
+	for (c = c - 2; c>0; c--) {
+		for (y = 1; y <= c; y++)
+			printf_s("%d", y);
+		printf_s("\n");
+	}
+
+	printf_s("\n");
+
+	system("pause");
+	return 0;
+}
