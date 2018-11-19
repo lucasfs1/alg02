@@ -1,0 +1,30 @@
+int main()
+{
+	printf("exercicio 20\n");
+	int mat[3][3], i, j;
+	printf("informe os valores\n");
+	for (i = 0; i < 3; i++)
+	{
+		for (j = 0; j < 3; j++)
+		{
+			printf("Linha: %i , Coluna: %i :", i, j);
+			scanf_s("%i", &mat[i][j]);
+
+		}
+	}
+	for (i = 0; i < 3; i++)
+	{
+		for (j = 0; j < 3; j++)
+		{
+			if (mat[i][j] < 0)
+			{
+				printf("%i,", mat[i][j] * -1);
+			}
+		}
+	}
+
+	system("pause");
+	return 0;
+
+
+}
