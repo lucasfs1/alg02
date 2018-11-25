@@ -1,0 +1,141 @@
+#include<stdlib.h>
+#include <conio.h>
+#include <stdio.h>
+#include "stdafx.h"
+#include <math.h>
+
+
+/*
+exercicio 21
+
+        int main()
+        {
+          int numero,n, i, par, soma=0;;
+          printf("digite um numero para o calculo\n");
+          scanf("%i", &numero);
+
+
+
+          n = numero;
+          for (i = 0; i <= n; i++)
+          {
+            par = i % 2;
+            if(par==0)
+            {
+              soma = soma + i;
+            }
+          }
+          printf("O resultado eh: %i\n", soma);
+
+
+          system("pause");
+            return 0;
+        }
+
+*/
+
+exercicio 22
+
+            int main()
+          {
+          int mat[3][3], i, j;
+          printf("informe os valores\n");
+          for (i = 0; i < 3; i++)
+          {
+            for (j = 0; j < 3; j++)
+            {
+              printf("Linha: %i , Coluna: %i :", i, j);
+              scanf("%i", &mat[i][j]);
+            }
+          }
+        printf("Matriz\n");
+          for (i = 0; i < 3; i++)
+          {
+            for (j = 0; j<3; j++)
+            {
+              printf("%i ", mat[i][j]);
+            }
+            printf("\n");
+          }
+          printf("Matriz Transposta\n");
+          for (j = 0; j < 3; j++)
+          {
+            for (i = 0; i<3; i++)
+            {
+              printf("%i ", mat[i][j]);
+            }
+            printf("\n");
+          }
+
+
+          system("pause");
+            return 0;
+          }
+*/
+ /*
+  exercicio 23
+  
+          int main()
+          {
+             int horas,veloc,distancia,litros_usados;
+             printf("Tempo gasto da viagem em horas? \n");
+             scanf("%i)",&horas);
+              printf("Velocidade media: ");
+             scanf("%i",&veloc);
+
+             distancia = horas * veloc;
+             litros_usados =  distancia / 12;
+
+             printf("\n%i:Horas\n" , horas);
+              printf("\n%i:KM/h\n" , veloc);
+              printf("\n%i:litros_usados\n" , litros_usados);
+              printf("\n%i:KM\n" , distancia);
+
+
+            system("pause");
+            return 0;
+          }
+
+*/
+/*
+
+exercicio 24
+
+        int main()
+          {
+            int a,b,valor;
+            printf("Informe um valor para a:");
+              scanf("%i",&a);
+              printf("Informe um valor para b:");
+              scanf("%i",&b);
+             valor = a;
+             a = b;
+             b = valor;
+             printf("a:%i\n",a);
+             printf("b:%i",b);
+             printf("\n");		
+
+          system("pause");
+            return 0;
+          }
+  */
+  /*
+
+
+exercicio 25
+
+        int main()
+          {
+            float salario,soma,calc;
+            printf("exercicio 25");
+            printf("informe seu salario bruto: ");
+              scanf_s("%f", &salario);
+            soma = salario * 0.10;
+            calc = salario *0.05;
+            float salarioliq = salario - (soma + calc);
+            printf("salario final:%.2f", salarioliq);
+
+            system("pause");
+            return 0;
+          }
+	*/
