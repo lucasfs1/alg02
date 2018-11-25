@@ -1,0 +1,81 @@
+exercicio  11 
+        int main()
+        {
+          float pi = 3.14;
+          float area, raio;
+          printf_s("Informe  o raio para o calculo:");
+          scanf_s("%f", &raio);
+          area = pi * pow(raio, 2);
+          printf_s("Resultado do da raio:%.2f",area);
+          system("pause");
+          return 0;
+        }
+          */
+	/*
+	exercicio 12
+        int main()
+        {
+          float area, base, altura;
+          printf_s("informe o valor da base:");
+          scanf_s("%f", &base);
+          printf_s("informe o valor da altura:");
+          scanf_s("%f", &altura);
+          area = (base * altura) / 2;
+          printf_s("Resultado final: %.2f\n", area);
+          system("pause");
+            return 0;
+        }
+	exercicio 13
+        int main()
+        {
+          int inteiro;
+          printf_s("Informe um numero inteiro:\n");
+          scanf_s("%i", &inteiro);
+          for (int i = 0; i < inteiro; i++)
+          {
+            printf_s("%i", i * 2 + 1);
+          }
+          printf_s("\n");
+          system("pause");
+          return 0;
+        }
+        */		
+		
+		/*
+		exercicio 14
+    
+            int main()
+
+            {
+              printf("xxxxx\n");
+              printf("x   x\n");
+              printf("x   x\n");
+              printf("x   x\n");
+              printf("xxxxx\n");
+
+
+
+          system("pause");
+          return 0;
+          }
+		
+	*/	
+  exercicio 15
+  
+        int main()
+        {
+          int x,n,calculo,i,b;
+          printf_s("Informe um numero inteiro para x:\n");
+          scanf_s("%i", &x);
+          printf_s("Informe um numero inteiro para n:\n");
+          scanf_s("%i", &n);
+          for (i = 0; i < n - 1; i++)
+          {
+            x = x * x;
+          }
+
+          printf_s("%i", x);
+          printf_s("\n");
+          system("pause");
+          return 0;
+        }
