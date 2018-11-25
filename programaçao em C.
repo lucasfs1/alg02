@@ -1,0 +1,184 @@
+/*
+exercicio 6
+          void NumeroInteiro()
+          {
+            int Inteiro;
+            printf("Digite um numero inteiro:");
+            scanf_s("%i", &Inteiro);
+            int soma = 0;
+              for (int i = 0; i <= Inteiro; i++) {
+                soma += i;
+              }
+              printf("O resultado e :%i\n", soma);
+
+          }
+           int main()
+          {
+            NumeroInteiro();
+            system("pause");
+            return 0;
+          }
+          */ 
+ exercicio 7
+               int main()
+              {
+                int numero;
+                int a,b;
+
+                printf("Digite o primeiro numero:");
+                scanf("%i",&a);
+
+
+                printf("Digite o segundo  numero:");
+                scanf("%i",&b);
+
+                if (a > b){ 
+
+              if (a % b == 0){ 
+              printf("a e b sao multiplos\n "); 
+               }else{ 
+               printf("a e b Nao sao multiplos\n "); 
+               }; 
+               }else{ 
+               if (b % a== 0){ 
+               printf("a e b sao multiplos.\n"); 
+               }else{ 
+               printf("a e b Nao sao multiplos.\n"); 
+              }; 
+               };
+
+                 system("pause");
+                 return 0;
+                }
+	exercicio 8
+        int main()
+        {
+          int idade;
+
+          printf("Informe sua idade:");
+          scanf("%i",&idade);
+
+          if(idade >= 5 && idade <=7)
+
+              printf("Categotia:INFANTIL A\n");
+
+          else if (idade >= 8 && idade <=10){
+
+            printf("Categotia:INFANTIL B\n");	
+          }
+
+          else if (idade >= 11 && idade <=13){
+
+            printf("Categotia:JUVENIL A\n");	
+          }
+
+          else if (idade >= 14 && idade <=17){
+
+            printf("Categotia:JUVENIL B\n");	
+          }
+
+          else if (idade >= 18){
+
+            printf("Categotia:Adulto\n");	
+          }
+
+
+           system("pause");
+         return 0;
+        }
+ exercicio 9
+          int main()
+          {
+            int opc;
+            float nota1,nota2,nota3,media;
+
+
+
+
+            printf("opcoes\n");
+            printf("1-aritmetica\n");
+            printf("2-ponderada\n");
+            printf("3-harmonica\n");
+            scanf("%i", &opc);
+            if((opc>=4) || (opc<0))
+            printf("opcao invalida");
+            else if (opc==1){
+            printf("informe a primeira nota para o calculo aritmetico:\n");	
+            scanf("%f", &nota1);
+
+            printf("informe a segunda  nota para o calculo aritmetico:\n");	
+            scanf("%f", &nota2);
+
+            printf("informe a terceira  nota para o calculo aritmetico:\n");	
+            scanf("%f", &nota3);
+
+             media=(nota1 + nota2 + nota3)/(3);
+
+            printf("Resultado1 do calculo aritmetico:%.1f\n",media);
+
+            }
+              else if (opc==2){
+            printf("informe a primeira  nota para o calculo da media ponderada :\n");	
+            scanf("%f", &nota1);
+            printf("informe a segunda  nota para o calculo da media ponderada:\n");	
+            scanf("%f", &nota2);
+            printf("informe a terceira  nota para o calculo da media ponderada:\n");	
+            scanf("%f", &nota3);
+
+             media = (nota1 * 3 + nota2 * 3 + nota3 * 4 ) / (10);
+            printf("Resultado da media ponderada:%.1f\n",media);
+
+            }
+              else if (opc==3){
+            printf("informe a primeira  nota para o calculo da media harmonica:\n");	
+            scanf("%f", &nota1);
+            printf("informe a segunda  nota para o calculo da media harmonica:\n");	
+            scanf("%f", &nota2);
+            printf("informe a terceira  nota para o calculo da media harmonica:\n");	
+            scanf("%f", &nota3);
+           media = (3) / (1 /nota1 + 1/nota2+ 1/nota3 ) ;
+            printf("Resultado da media harmonica:%.2f\n",media);
+            }
+
+
+            system("pause");
+            return 0;
+          }
+exercicio 10
+      int main()
+      {
+        setlocale(LC_ALL, "Portuguese");
+        float quant,valor;
+        int cod;	
+
+        printf("Informe a quantidade?");
+        scanf("%f",&quant);
+
+        printf("Informe o codigo ?");
+        scanf("%i",&cod);
+
+        switch(cod)
+        {
+          case 1001:
+            valor = 5.32 * quant;
+            break;
+
+          case 1324:
+              valor = 6.45 * quant;
+            break;
+          case 6548:
+              valor = 2.37 * quant;	
+            break;
+          case 0987:
+            valor = 5.32 * quant;
+            break;
+          case 7623:
+            valor = 6.45 * quant;
+            break;
+
+        }
+        printf("preço total:%.2f\n",valor);
+
+          system("pause");
+           return 0;
+        }
