@@ -1,0 +1,128 @@
+#include <iostream>
+#include "stdafx.h"
+#include <stdlib.h>
+#include<stdio.h>
+
+
+exercicio 26
+        int main()
+        {
+          int idade,dias;
+
+          printf("Informe sua idade: ");
+          scanf("%i",&idade);
+
+          dias = idade * 365;
+
+
+
+          printf("Você viveu %i dias\n", dias);
+
+
+
+
+          system("pause");
+          return 0;
+        }
+
+exercicio 27
+        int main()
+        {
+          int compra, troco, valor, um, dez, cem;
+          printf("Favor digitar o valor da compra\n");
+          scanf_s("%i", &compra);
+          printf("Favor digitar o valor pago\n");
+          scanf_s("%i", &valor);
+          troco = valor - compra;
+          valor = troco;
+          if (valor >= 100)
+          {
+            cem = valor / 100;
+            dez = valor % 100;
+            dez = dez / 10;
+            um = valor % 10;
+          }
+          else if (valor >= 10 && valor<100)
+          {
+            cem = 0;
+            dez = valor / 10;
+            um = valor % 10;
+          }
+          else if (valor >= 0 && valor<10)
+          {
+            cem = 0;
+            dez = 0;
+            um = valor;
+          }
+          else
+          {
+            printf("Valor pago eh menor do que o Total a pagar\n");
+            system("pause");
+          }
+
+          printf("O valor da compra eh: %i ", compra);
+          printf("\n O valor do troco eh: %i ", troco);
+          printf("%i notas de Cem\n", cem);
+          printf("%i notas de Dez\n", dez);
+          printf("%i notas de Um \n",um);
+
+          system("pause");
+
+          return 0;
+  
+  exercicio 28
+  
+        int main()
+          {
+            float salario, total;
+            int quant;
+
+            printf("informe o salario minimo: ");
+            scanf("%f", &salario);
+            printf("informe a quantidade de carros vendidos: ");
+            scanf("%i", &quant);
+            printf("Informe o valor total da venda de carros: ");
+            scanf("%f", &total);
+
+            salario = 2 * salario + quant * 50 + total * 0.05;;
+
+            printf("Salario do total do funcionario eh:%.2f\n", salario);
+
+            system("pause");
+            return 0;
+          }
+          
+  exercicio 30
+  
+          int main()
+        {
+
+
+          int num, i, cont=0;
+
+          printf("Digite um numero de 2 a 20: ");
+          scanf("%i",&num);
+          if(num < 2 || num > 20)
+          {
+            printf("\nNumero invalido");
+          }
+          else
+          {
+
+          while(num>0)
+          {
+            printf("\t");
+            for(i=0; i<cont; i++)
+
+              printf("x");
+
+            for(i=1; i<=num; i++)
+
+              printf("%i",i);
+            printf("\n");
+
+            num--;
+            cont++;
+          }
+          }
+        }
