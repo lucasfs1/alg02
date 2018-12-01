@@ -1,0 +1,19 @@
+exercicio 36
+
+
+int numero;
+int contador = 0;
+int main(int argc, char * argv[])
+{
+	
+	printf("informe  o numero: ");
+	scanf("%i", &numero);
+	for (contador = 0; contador <= 20; contador++)
+	{
+		printf("%i x %i = %i\n", numero,contador,numero * contador);
+	}
+
+	system("pause");
+    return 0;
+}
+
