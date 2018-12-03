@@ -1,0 +1,70 @@
+#include <stdlib.h>
+#include <stdio.h>
+
+exercicio 37
+
+        struct dma
+         {
+          int dia;
+          int mes;
+          int ano;
+         };
+ int main()
+         {
+          int data1, data2, diferenca;
+          struct dma calculo1;
+          printf("informe os dias:\n");
+          scanf("%i", &calculo1.dia);
+          printf("informe o mes:\n");
+          scanf("%i", &calculo1.mes);
+          printf("informe o ano:\n");
+          scanf("%i", &calculo1.ano);
+
+
+              struct dma calculo2;
+                printf("informe os dias:\n");
+              scanf("%i", &calculo2.dia);
+              printf("informe o mes:\n");
+              scanf("%i", &calculo2.mes);
+              printf("informe o ano:\n");
+              scanf("%i", &calculo2.ano);
+
+                  data1= calculo1.ano * 365 + calculo1.mes * 30 + calculo1.dia;
+
+
+                    data2 =calculo2.ano * 365 + calculo2.mes * 30 + calculo2.dia;
+
+
+                      if (data1 >= data2)
+                    {
+                        diferenca = data1 - data2;
+                    }
+                      else
+                      {
+                         diferenca = data2 -data1;
+                      }
+
+                          printf("A diferenca entre as duas  datas e de %i dia(s) \n", diferenca);
+                          system("pause");
+                          return 0;
+               }                    
+                          
+exercicio 38       
+
+         struct hm
+         {
+          int hora;
+          int min;
+         }; 
+ int main()
+        {
+          int minutos;
+          printf("Informe os minutos para o calculo:\n");
+          scanf("%i", &minutos);
+          struct hm x;
+          x.hora = minutos / 60;
+          x.min = minutos % 60;
+          printf("%i hora(s) e %i minuto(s)\n", x.hora, x.min);
+          system("pause");
+          return 0;
+        }
