@@ -1,0 +1,62 @@
+#include <math.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <map>
+#include <locale.h>
+
+int main()
+{
+    setlocale(LC_ALL, "Portuguese");
+
+    int quant, cod;
+    float valor, valor_total;
+
+    do
+    {
+        printf("Digite o código: ");
+        scanf("%i",&cod);
+
+        if(cod != -1)
+        {
+            printf("Digite a quantidade: ");
+            scanf("%i",&quant);
+
+            switch (cod)
+            {
+                case 1001:
+                    valor = 5.32 * quant;
+                    break;
+
+                   case 1324:
+                    valor = 6.45 * quant;
+                    break;
+
+                case 6548:
+                    valor = 2.37 * quant;
+                    break;
+
+                case 1987:
+                    valor = 5.32 * quant;
+                       break;
+
+                case 7623:
+                    valor = 6.45 * quant;
+                    break;
+
+                case -1:
+                    printf("\n");
+                    break;
+
+                default:
+                    printf("\n\n");
+                       printf("Codigo invalido.\n\n");
+                    system("pause");
+            }
+            valor_total = valor_total + valor;
+        }
+        
+    }while(cod != -1);
+    
+    printf("--------------------------------\n");
+    printf("Valor total: R$%.2f",valor_total);
+}
